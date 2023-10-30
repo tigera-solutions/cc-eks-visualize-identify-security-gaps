@@ -1,4 +1,4 @@
-# Workshop: Microsoft EKS Security Bootcamp: </br> Visualize cluster traffic and identify security gaps
+# Workshop: Amazon EKS Security Bootcamp: </br> Visualize cluster traffic and identify security gaps
 
 ## Welcome
 
