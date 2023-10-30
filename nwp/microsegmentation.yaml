@@ -1,0 +1,99 @@
+apiVersion: projectcalico.org/v3
+kind: NetworkPolicy
+metadata:
+  name: platform.vote
+  namespace: vote
+spec:
+  tier: platform
+  order: 100
+  selector: app == 'vote'
+  types:
+  - Ingress
+  - Egress
+  ingress:
+  - action: Allow
+    protocol: TCP
+    source: {}
+    destination:
+      ports:
+      - 80
+  egress:
+  - action: Allow
+    protocol: TCP
+    destination:
+      selector: app == 'redis'
+      ports:
+      - 6379
+---
+apiVersion: projectcalico.org/v3
+kind: NetworkPolicy
+metadata:
+  name: platform.result
+  namespace: vote
+spec:
+  tier: platform
+  order: 110
+  selector: app == 'result'
+  types:
+  - Ingress
+  - Egress
+  ingress:
+  - action: Allow
+    protocol: TCP
+    source: {}
+    destination:
+      ports:
+      - 80
+  egress:
+  - action: Allow
+    protocol: TCP
+    destination:
+      selector: app == 'db'
+      ports:
+      - 5432
+---
+apiVersion: projectcalico.org/v3
+kind: NetworkPolicy
+metadata:
+  name: platform.worker
+  namespace: vote
+spec:
+  tier: platform
+  order: 140
+  selector: app == 'worker'
+  types:
+  - Ingress
+  - Egress
+  egress:
+  - action: Allow
+    protocol: TCP
+    destination:
+      selector: app == 'redis'
+      ports:
+      - 6379
+  - action: Allow
+    protocol: TCP
+    destination:
+      selector: app == 'db'
+      ports:
+      - 5432 
+---
+apiVersion: projectcalico.org/v3
+kind: NetworkPolicy
+metadata:
+  name: platform.loadgenerator
+  namespace: vote
+spec:
+  tier: platform
+  order: 200
+  selector: app == 'loadgenerator'
+  types:
+  - Ingress
+  - Egress
+  egress:
+  - action: Allow
+    protocol: TCP
+    destination:
+      selector: app in {'vote', 'result'}
+      ports:
+      - 80
