@@ -1,7 +1,7 @@
 
-# Module 1 - Connect your AKS cluster to Calico Cloud
+# Module 1 - Connect your EKS cluster to Calico Cloud
 
-> :warning: To complete this module, you will need a [Calico Cloud account](https://www.calicocloud.io/). If you are participating in a live workshop, you will receive an invite with the information to login into an active Calico Cloud environment. Once logged in,  join your AKS cluster there.
+> :warning: To complete this module, you will need a [Calico Cloud account](https://www.calicocloud.io/). If you are participating in a live workshop, you will receive an invite with the information to login into an active Calico Cloud environment. Once logged in,  join your EKS cluster there.
 If you are running this workshop in a self-paced mode, you can create a Calico Cloud environment following the steps [here](/mod/submodule-1.1-create-calicloud.md).  
 
 Issues with being unable to navigate menus in the UI are often due to browsers blocking scripts - please ensure that you disable all blocker scripts.
@@ -29,7 +29,8 @@ Issues with being unable to navigate menus in the UI are often due to browsers b
     ```bash
     echo $RANDOM-tigera-workshop
     ```
-   ![connect-a-cluster](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/42be811f-b79b-4537-9805-d3a3169eac60)
+
+   ![registering_get_key](https://user-images.githubusercontent.com/104035488/188036064-f85cac4f-66c0-4c09-bdd3-67922640679d.gif)
 
 2. Run the installation script in your cluster. Script should look similar to this:
     
