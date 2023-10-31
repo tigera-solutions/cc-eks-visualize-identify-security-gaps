@@ -12,7 +12,7 @@ Issues with being unable to navigate menus in the UI are often due to browsers b
 
    <img width="500" alt="invite email" src="https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/05838246-63b7-4d91-bf83-2166efdfe1df)">
    
-3. Click on the link ACCEPT INVITATION and create a password to access the Calico Cloud.
+3. Click on the link ACCEPT INVITATION and create a password ① and click `Continue` ② to access the Calico Cloud.
 
    <img width="500" alt="create a password" src="https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/830dda1f-c7cd-49f0-949b-d7d6d2d73b5d">
 
