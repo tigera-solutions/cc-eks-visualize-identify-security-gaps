@@ -29,8 +29,7 @@ Issues with being unable to navigate menus in the UI are often due to browsers b
     ```bash
     echo $RANDOM-tigera-workshop
     ```
-
-   ![registering_get_key](https://user-images.githubusercontent.com/104035488/188036064-f85cac4f-66c0-4c09-bdd3-67922640679d.gif)
+   ![connect-a-cluster](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/7c6cea4e-9e01-4abe-bb3a-17891c0d4028)
 
 2. Run the installation script in your cluster. Script should look similar to this:
     
