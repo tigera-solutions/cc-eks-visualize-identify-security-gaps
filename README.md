@@ -34,7 +34,7 @@ The estimated time to complete this workshop is 60-90 minutes.
 
 ## Workshop Environment Preparation
 
-> :warning: **For this workshop, you are expected to have access to a previously created AKS cluster.**
+> :warning: **For this workshop, you are expected to have access to a previously created EKS cluster.**
 
 - Please, follow the instructions on the repository below if you don't have it ready: 
 
