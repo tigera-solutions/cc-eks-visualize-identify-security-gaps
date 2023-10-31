@@ -9,14 +9,18 @@ Issues with being unable to navigate menus in the UI are often due to browsers b
 ## Step 1 - Accept the Invitation
 
 1. During the workshop, you will receive an invitation to connect to a Calico Cloud organization, just like in the picture below:
- 
+
+   ![accept-invitation](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/05838246-63b7-4d91-bf83-2166efdfe1df)
+
    ![accept_invitation](https://user-images.githubusercontent.com/104035488/215204989-66b666d9-5e93-45b5-a0c5-2236b135af31.png)
    
-2. Click on the link ACCEPT INVITATION and create a password to access the Calico Cloud.
+3. Click on the link ACCEPT INVITATION and create a password to access the Calico Cloud.
+
+   ![Screenshot 2023-10-31 at 17 25 18](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/830dda1f-c7cd-49f0-949b-d7d6d2d73b5d)
 
    <img width="300" alt="create a password" src="https://user-images.githubusercontent.com/104035488/215205017-0a41f506-5c91-4830-9249-677c6a06fb3b.png">
 
-3. Once you have access to your **Calico Cloud** environment, go to step 2:
+4. Once you have access to your **Calico Cloud** environment, go to step 2:
 
 ## Step 2 - Connect your cluster to Calico Cloud.
 
@@ -29,9 +33,11 @@ Issues with being unable to navigate menus in the UI are often due to browsers b
     ```bash
     echo $RANDOM-tigera-workshop
     ```
-   ![connect-a-cluster](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/7c6cea4e-9e01-4abe-bb3a-17891c0d4028)
+   ![connect-a-cluster](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/c657798e-8828-4532-b0d1-57ba59194b66)
+   
+![connect-a-cluster](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/7c6cea4e-9e01-4abe-bb3a-17891c0d4028)
 
-2. Run the installation script in your cluster. Script should look similar to this:
+3. Run the installation script in your cluster. Script should look similar to this:
     
     <pre>
     kubectl apply -f https://installer.calicocloud.io/manifests/cc-operator/lat
@@ -82,6 +88,8 @@ Issues with being unable to navigate menus in the UI are often due to browsers b
     You can also monitor your cluster installation on the Calico Cloud UI. Go to the "**Managed Clusters**" section, select your cluster and expand the timestamp dropdown to see the installation logs.
     In a few minutes, the status will change from **Installing** to **Done**. Congratulations! You successfully connected your cluster to Calico Cloud.
 
+    ![installed](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/c6feedba-ffb9-4101-be8d-47c9488d93a2)
+
     ![installing](https://user-images.githubusercontent.com/104035488/188036070-71cd3cb7-639b-46f2-bd5e-dbdb401b48e3.gif)
 
 ## STEP 3 - Select your cluster.
@@ -95,7 +103,9 @@ You can switch between clusters by following the steps below:
 2. Click on the **Cluster** dropdown button on the top-right of the UI.
 
 3. Select your recently added cluster.
-   
+
+   ![Screenshot 2023-10-31 at 17 35 49](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/66cc3cd5-9661-47c6-a4ab-921ae43e44c3)
+
    ![selecting_cluster](https://user-images.githubusercontent.com/104035488/188036074-857e6a19-7641-4dff-9f6b-02eb627cf748.gif)
 
 The "**Cluster**" dropdown button will always be visible across the Calico Cloud UI, no matter which section you are viewing. You can change the cluster you want to interact with at any moment. 
