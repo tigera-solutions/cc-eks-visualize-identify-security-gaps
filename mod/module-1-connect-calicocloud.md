@@ -30,8 +30,7 @@ Issues with being unable to navigate menus in the UI are often due to browsers b
     echo $RANDOM-tigera-workshop
     ```
    ![connect-a-cluster](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/c657798e-8828-4532-b0d1-57ba59194b66)
-   
-![connect-a-cluster](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/7c6cea4e-9e01-4abe-bb3a-17891c0d4028)
+  
 
 3. Run the installation script in your cluster. Script should look similar to this:
     
@@ -86,8 +85,6 @@ Issues with being unable to navigate menus in the UI are often due to browsers b
 
     ![installed](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/c6feedba-ffb9-4101-be8d-47c9488d93a2)
 
-    ![installing](https://user-images.githubusercontent.com/104035488/188036070-71cd3cb7-639b-46f2-bd5e-dbdb401b48e3.gif)
-
 ## STEP 3 - Select your cluster.
 
 Once the installation is completed, you can start interacting with your cluster from the Calico Cloud interface. Calico Cloud provides a single pane of glass for managing multiple clusters. If you followed the previous steps, you would have two clusters connected to Calico Cloud at this point: Your cluster and a pre-configured lab cluster that allows you to explore some of the features in Calico Cloud.
@@ -100,9 +97,7 @@ You can switch between clusters by following the steps below:
 
 3. Select your recently added cluster.
 
-   ![Screenshot 2023-10-31 at 17 35 49](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/66cc3cd5-9661-47c6-a4ab-921ae43e44c3)
-
-   ![selecting_cluster](https://user-images.githubusercontent.com/104035488/188036074-857e6a19-7641-4dff-9f6b-02eb627cf748.gif)
+   ![select-cluster](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/66cc3cd5-9661-47c6-a4ab-921ae43e44c3)
 
 The "**Cluster**" dropdown button will always be visible across the Calico Cloud UI, no matter which section you are viewing. You can change the cluster you want to interact with at any moment. 
 When you change the cluster, the Calico Cloud context will change immediately to reflect the information regarding the currently selected cluster.
