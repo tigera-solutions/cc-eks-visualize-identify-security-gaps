@@ -40,13 +40,18 @@ The estimated time to complete this workshop is 60-90 minutes.
 
   [Calico Cloud on EKS - Workshop Environment Preparation](https://github.com/tigera-solutions/eks-workshop-prep)
 
-- We will run this workshop from the Azure Cloud Shell, as described in that repository.
+- We will run this workshop from the AWS CloudShell, as described in that repository.
 
-- To start your cluster, reload the environment variables create in your Azure Cloud Shell first and then start the cluster. Use the following command:
+- To get your cluster ready, reload the environment variables create in your AWS CloudShell first and then scale up the nodegroup back to 2 nodes. Use the following command:
 
   ```bash
   source ~/workshopvars.env
-  az aks start --resource-group $RESOURCE_GROUP --name $CLUSTERNAME
+  eksctl scale nodegroup $NGNAME \
+     --cluster $CLUSTERNAME \
+     --region $REGION \
+     --nodes 2 \
+     --nodes-max 2 \
+     --nodes-min 2
   ```
 
 ## Modules
