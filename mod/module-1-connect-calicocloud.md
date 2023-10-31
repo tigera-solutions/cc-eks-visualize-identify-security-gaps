@@ -10,7 +10,7 @@ Issues with being unable to navigate menus in the UI are often due to browsers b
 
 1. During the workshop, you will receive an invitation to connect to a Calico Cloud organization, just like in the picture below:
 
-   <img width="300" alt="invite email" src="https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/05838246-63b7-4d91-bf83-2166efdfe1df)">
+   <img width="500" alt="invite email" src="https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/05838246-63b7-4d91-bf83-2166efdfe1df)">
 
    ![accept-invitation](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/05838246-63b7-4d91-bf83-2166efdfe1df)
 
