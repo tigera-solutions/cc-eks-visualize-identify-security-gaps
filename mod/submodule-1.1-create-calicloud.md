@@ -4,13 +4,9 @@
 
    ![cc-signup](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/c675f9a5-2c1f-4c19-a79e-ae55cbe14277)
 
-    ![register](https://user-images.githubusercontent.com/104035488/188006082-e13d07eb-fb4a-4a9a-8189-432a8659f100.gif)
-
 2. You will receive a verification e-mail - if you do not, check your Spam/Junk folder. Click the "**VERIFY YOUR ACCOUNT**" button in the e-mail. You should see a web pager with the email verification succeeded message. Click the "**Back to Calico Cloud**" link to return to Calico Cloud. Enter your profile information and submit. In a few moments your trial environment will be ready for you to use.
 
    ![cc-email-confirmation](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/c01f0127-e232-4992-968a-4a27e61e48e6)
-
-    ![register_email](https://user-images.githubusercontent.com/104035488/188006198-834195b2-a5c0-416d-9b70-df11be95a699.gif)
 
 This concludes the Calico Cloud trial account creation. You can log in back at any time using the "**Login as an Existing User**" link in the [Calico Cloud](https://www.calicocloud.io/) website.
 
