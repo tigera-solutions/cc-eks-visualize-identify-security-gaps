@@ -2,7 +2,7 @@
 
 Calico provides methods to enable fine-grained access controls between microservices and external databases, cloud services, APIs, and other applications.
 
-In this workshop, you will learn how to use Calico to create network policies to control access to and from a pod. We will install the `Example Voting Application`. Once the application is deployed, we will create and test network security policies with different ingress and egress rules to demonstrate how **workload access control** is done, and other use cases.
+For this workshop, we will install the `Example Voting Application`. Once the application is deployed, we will be able to create and test network security policies with different ingress and egress rules, and explore other use cases.
 
 1. Clone this repository in your AWS CloudShell.
 
