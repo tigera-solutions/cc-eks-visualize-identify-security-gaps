@@ -14,7 +14,7 @@ Our threat detection engine also monitors activity within the containers running
 1. Let's start by enabling the container threat detection feature.
    For this, go to the `Threat Defense` option in the left-hand menu of Calico Cloud and select `Container Threat Detection`.
 
-2. Navigate to `Threat Defense > Container Threat Detection` and click on the `Enable Container Threat Detection` button.
+2. Navigate to `Threat Defense > Container Threat Detection` and click the `Enable Container Threat Detection` button.
 
    ![enable-threat-detection](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/89d290a7-2aef-4a6b-8813-11bf94db2577)
 
@@ -54,7 +54,7 @@ To test this feature, we can download a file containing the hash of malware and 
    
 3. Wait a minute and look in the Calico Cloud UI in the `Threat Defense` > `Security Events`.
 
-   ![security-events](https://github.com/tigera-solutions/cc-aks-visualize-identify-security-gaps/assets/104035488/200b4d0b-490a-4d7c-b18e-ef9c59cc6079)
+   ![security-events](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/0264703a-ff38-4fc5-b65a-24ef187803ee)
 
    Because the `ransomware` file has a hash that identifies it as malware, Calico will create a **Malware** event indicating its execution event. Additionally, a security event showing the modification of the file permission (`chmod +x ransomware`) will be created as well.
 
