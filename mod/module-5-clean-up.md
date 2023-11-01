@@ -9,25 +9,18 @@
 2. Delete the AKS cluster.
    
    ```bash
-   az aks delete \
-     --resource-group $RESOURCE_GROUP \
-     --name $CLUSTERNAME
+   eksctl delete cluster \
+     --name $CLUSTERNAME \
+     --region $REGION
    ```
 
-3. Delete the resource group.
-   
-   ```bash
-   az group delete \
-     --name $RESOURCE_GROUP
-   ```
-
-4. Delete this repo
+3. Delete this repo
 
    ```bash
-   cd .. && rm -Rf cc-aks-visualize-identify-security-gaps
+   cd .. && rm -Rf cc-eks-visualize-identify-security-gaps
    ```
 
-5. Delete environment variables backup file.
+4. Delete environment variables backup file.
 
    ```bash
    rm ~/workshopvars.env
