@@ -20,7 +20,7 @@ In this module, we will learn how to use Calico to create network policies to co
 
 Included in the `pre` folder, there is an application that will be used in the exercises during the workshop. The diagram below shows how the elements of this application communicate between themselves.
 
-![vote](https://github.com/tigera-solutions/cc-eks-compliance/assets/104035488/142ea62b-be3e-4c37-b39c-b501e1834f89)
+<img width="400" alt="example vote application" src="https://github.com/tigera-solutions/cc-eks-compliance/assets/104035488/142ea62b-be3e-4c37-b39c-b501e1834f89">
 
 
 There are also other objects that will be created. We will learn about them later in the workshop.
