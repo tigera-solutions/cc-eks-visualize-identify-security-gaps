@@ -11,7 +11,7 @@ For this workshop, we will install the `Example Voting Application`. Once the ap
    cd cc-eks-visualize-identify-security-gaps
    ```
 
-2. Installing the example application stacks:
+2. Install the example application stack and other kubernetes objects to prepare the environment:
 
    From the cloned directory, execute:
    ```
