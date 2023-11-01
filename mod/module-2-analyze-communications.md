@@ -4,7 +4,7 @@ Calico provides methods to enable fine-grained access controls between microserv
 
 In this module, we will learn how to use Calico to create network policies to control access to and from a pod. We will install the `Example Voting Application`. Once the application is deployed, we will create and test network security policies with different ingress and egress rules to demonstrate how **workload access control** is done.
 
-1. Clone this repository in your Azure Cloud Shell.
+1. Clone this repository in your AWS CloudShell.
 
    ```bash
    git clone https://github.com/tigera-solutions/cc-aks-visualize-identify-security-gaps.git && \
