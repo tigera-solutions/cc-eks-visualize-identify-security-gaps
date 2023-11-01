@@ -6,7 +6,7 @@
    kubectl delete -f pre/005-vote-app-manifest.yaml
    ```
 
-2. Delete the AKS cluster.
+2. Delete the EKS cluster.
    
    ```bash
    source ~/workshopvars.env
