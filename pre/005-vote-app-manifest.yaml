@@ -160,24 +160,8 @@ metadata:
   namespace: vote
   annotations:
     projectcalico.org/l7-logging: 'true'
-spec:
-  type: ClusterIP
-  ports:
-  - name: "vote-service"
-    port: 80
-    targetPort: 80
-  selector:
-    app: vote
----
-apiVersion: v1
-kind: Service
-metadata:
-  labels:
-    app: vote
-  name: vote-external
-  namespace: vote
-  annotations:
-    projectcalico.org/l7-logging: 'true'
+    service.beta.kubernetes.io/aws-load-balancer-type: nlb
+    service.beta.kubernetes.io/aws-load-balancer-target-group-attributes: preserve_client_ip.enabled=true
 spec:
   type: LoadBalancer
   externalTrafficPolicy: Local
@@ -217,28 +201,12 @@ kind: Service
 metadata:
   labels:
     app: result
-  name: result
-  namespace: vote
-  annotations:
-    projectcalico.org/l7-logging: 'true'
-spec:
-  type: ClusterIP
-  ports:
-  - name: "result-service"
-    port: 80
-    targetPort: 80
-  selector:
-    app: result
----
-apiVersion: v1
-kind: Service
-metadata:
-  labels:
-    app: result
   name: result-external
   namespace: vote
   annotations:
     projectcalico.org/l7-logging: 'true'
+    service.beta.kubernetes.io/aws-load-balancer-type: nlb
+    service.beta.kubernetes.io/aws-load-balancer-target-group-attributes: preserve_client_ip.enabled=true
 spec:
   type: LoadBalancer
   externalTrafficPolicy: Local
@@ -257,6 +225,7 @@ metadata:
 data:
   loadgen.sh: |
     #!/bin/sh
+    curl -X POST -d "vote=a" http://vote
     if [ $((RANDOM % 2)) -eq 0 ]
       then
         curl -X POST -d "vote=a" http://vote
