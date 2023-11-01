@@ -33,11 +33,15 @@ A common challenge expressed by DevOps engineers, Site Reliability Engineers (SR
 
 Connect to Calico Cloud GUI. From the menu, select `Service Graph > Default`. Explore the options.
 
+![service-graph](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/1b630d6c-1180-4866-8d1c-211965982b96)
+
 ![service_graph](https://user-images.githubusercontent.com/104035488/192303379-efb43faa-1e71-41f2-9c54-c9b7f0538b34.gif)
 
 Flow Visualizer, an essential tool within Calico Cloud, serves as a valuable resource for delving into network traffic within the cluster with the goal of resolving issues. The primary and widely-used function of Flow Visualizer is to provide an in-depth analysis that identifies the specific policies responsible for either permitting or blocking traffic between different services.
 
 Connect to Calico Cloud GUI. From the menu select `Service Graph > Flow Visualizations`. Explore the options.
+
+![flow-visualizations](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/c2eb7e8f-2e17-4bc6-9dd4-8bd94b25a569)
 
 ![flow-visualization](https://user-images.githubusercontent.com/104035488/192358472-112c832f-2fd7-4294-b8cc-fec166a9b11e.gif)
 
