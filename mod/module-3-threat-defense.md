@@ -84,7 +84,7 @@ In modern cloud-native security, threat intelligence feeds are vital for monitor
 
 3. Wait a minute and go to the Calico Cloud UI in the `Activity` > `Alerts`. You should be able to see the alerts for the connection attempt.
 
-   ![activity-alerts](https://github.com/tigera-solutions/cc-aks-visualize-identify-security-gaps/assets/104035488/ed2aad8c-f713-4e0e-b5c5-8abdb299fdb4)
+   ![activity-alerts](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/dadb5ce6-db8a-455c-bdcc-f26625841ffe)
 
 ## Quarantine a workload
 
