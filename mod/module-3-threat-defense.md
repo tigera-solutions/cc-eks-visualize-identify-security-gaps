@@ -74,7 +74,7 @@ In modern cloud-native security, threat intelligence feeds are vital for monitor
 
 1. Explore the Threat Feeds available in Calico Cloud UI in the `Threat Defense` > `Threat Feeds`. Click on each one to visualize the lists of IP addresses or domains.
 
-   ![threat-feeds](https://github.com/tigera-solutions/cc-aks-visualize-identify-security-gaps/assets/104035488/719cb334-e981-4e5e-8ef4-b37eea4a422b)
+   ![threat-feeds](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/b4bad2fb-9698-476f-8a58-f80a3747f11b)
 
 2. Using the pod attacker, try to connect to some of the IP addresses and domains you found in the alienvault lists.
 
