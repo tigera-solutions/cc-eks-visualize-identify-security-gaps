@@ -18,7 +18,7 @@ For this workshop, we will install the `Example Voting Application`. Once the ap
    kubectl apply -f pre
    ```
 
-Included in the `pre` folder, there is an application that will be used in the exercises during the workshop. The diagram below shows how the elements of this application communicate between themselves.
+Included in the `pre` folder, there is the `Example Voting Application` that will be used in the exercises during the workshop. The diagram below shows how the elements of this application communicate between themselves.
 
 <img width="400" alt="example vote application" src="https://github.com/tigera-solutions/cc-eks-compliance/assets/104035488/142ea62b-be3e-4c37-b39c-b501e1834f89">
 
