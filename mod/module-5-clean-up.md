@@ -9,6 +9,7 @@
 2. Delete the AKS cluster.
    
    ```bash
+   source ~/workshopvars.env
    eksctl delete cluster \
      --name $CLUSTERNAME \
      --region $REGION
