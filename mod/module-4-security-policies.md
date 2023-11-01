@@ -87,38 +87,26 @@ We recommend creating a global default deny policy after you complete writing th
    - Click on `Recommend a Policy`
 
      ![recommend](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/308625cd-f3dd-4d3b-9bb8-3340f324060d)
-
-     ![recommend](https://github.com/tigera-solutions/cc-aks-detect-block-network-attacks/assets/104035488/328a7010-e008-49d1-bb6e-751c2ecdf413)
    
    - Select the `vote` namespace in the Namespace dropdown 
 
      ![select-namespace](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/3aaa7e58-2581-4527-85b7-556b3f8aacf9)
 
-     ![select namespace](https://github.com/tigera-solutions/cc-aks-detect-block-network-attacks/assets/104035488/bb4bf93d-f1fc-425a-b5ca-7a53dcc53f85)
-
    - Click on `Advanced Options` and select the `redis-xxxxxxx-*` from the dropdown, and click on the `Recommend` button to get the recommended policy.
 
      ![workload](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/b6afca30-cdee-4adc-833f-fefa0954a847)
-
-     ![workload](https://github.com/tigera-solutions/cc-aks-detect-block-network-attacks/assets/104035488/131fe2ce-d53e-4858-8128-23caef8ca6ac)
  
    - Note that the selector and the rules are already present!
 
      ![review-policy](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/430f4020-306a-49b8-a077-9a9ca6c10239)
-    
-     ![review the policy](https://github.com/tigera-solutions/cc-aks-detect-block-network-attacks/assets/104035488/05c16863-ff65-462d-b900-e67f82e47c32)
-   
+  
    - Click on the Enforce button
 
      ![enforce](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/1a4a4fb6-7da0-4b66-8ff4-d58e0f65bd1b)
 
-     ![enforce](https://github.com/tigera-solutions/cc-aks-detect-block-network-attacks/assets/104035488/5958c64e-9fc8-49ff-b5e0-64cb31465b3f)
-
    - By default, all the recommended policies are created in the `default` tier. You can drag and drop a policy to reorganize in the same tier or in another tier. Move the policy to the platform tier.
 
      ![move](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/5b2c1a89-832a-4eaa-b52e-edbc43a4bbad)
-
-     ![move](https://github.com/tigera-solutions/cc-aks-detect-block-network-attacks/assets/104035488/fca4eefd-dd1a-4497-a242-13de99755929)
 
    Great! You just created a recommended policy. Easy, right? Now go ahead and create policies for all the other workloads in the vote namespace.
 
