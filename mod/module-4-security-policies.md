@@ -6,9 +6,9 @@ Using the `Example Voting Application` previously installed, we will create and 
 
 ![vote](https://github.com/tigera-solutions/cc-eks-compliance/assets/104035488/142ea62b-be3e-4c37-b39c-b501e1834f89)
 
-<center>
+<div style="text-align:center>
   <img width="400" alt="example vote application" src="https://github.com/tigera-solutions/cc-eks-compliance/assets/104035488/142ea62b-be3e-4c37-b39c-b501e1834f89">
-</center>
+</div>
 
 ## Security Policies
 
