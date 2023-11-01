@@ -81,7 +81,7 @@ Issues with being unable to navigate menus in the UI are often due to browsers b
     </pre>
 
     You can also monitor your cluster installation on the Calico Cloud UI. Go to the "**Managed Clusters**" section, select your cluster and expand the timestamp dropdown to see the installation logs.
-    In a few minutes, the status will change from **Installing** to **Done**. Congratulations! You successfully connected your cluster to Calico Cloud.
+    In a few minutes, the status will change from **Installing** to **Connected**. Congratulations! You successfully connected your cluster to Calico Cloud.
 
     ![installed](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/c6feedba-ffb9-4101-be8d-47c9488d93a2)
 
@@ -91,7 +91,7 @@ Once the installation is completed, you can start interacting with your cluster 
 
 You can switch between clusters by following the steps below:
 
-1. Navigate to the Dashboard section - the first icon under the Calico Cat on the top-left of the UI.
+1. Navigate to the Dashboard section - the second icon under the Calico Cat on the top-left of the UI.
 
 2. Click on the **Cluster** dropdown button on the top-right of the UI.
 
