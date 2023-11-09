@@ -80,35 +80,7 @@ We recommend creating a global default deny policy after you complete writing th
          - Click on the button `Save Rule`
      - You are done. Click `Enforce` on the top-right of your page.
 
-3. Now, let's use the **Recommend a Policy** feature to create the policies for the other workloads.
-
-   Let's start with the `redis` database.
-
-   - Click on `Recommend a Policy`
-
-     ![recommend](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/308625cd-f3dd-4d3b-9bb8-3340f324060d)
-   
-   - Select the `vote` namespace in the Namespace dropdown 
-
-     ![select-namespace](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/3aaa7e58-2581-4527-85b7-556b3f8aacf9)
-
-   - Click on `Advanced Options` and select the `redis-xxxxxxx-*` from the dropdown, and click on the `Recommend` button to get the recommended policy.
-
-     ![workload](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/b6afca30-cdee-4adc-833f-fefa0954a847)
- 
-   - Note that the selector and the rules are already present!
-
-     ![review-policy](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/430f4020-306a-49b8-a077-9a9ca6c10239)
-  
-   - Click on the Enforce button
-
-     ![enforce](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/1a4a4fb6-7da0-4b66-8ff4-d58e0f65bd1b)
-
-   - By default, all the recommended policies are created in the `default` tier. You can drag and drop a policy to reorganize in the same tier or in another tier. Move the policy to the platform tier.
-
-     ![move](https://github.com/tigera-solutions/cc-eks-visualize-identify-security-gaps/assets/104035488/5b2c1a89-832a-4eaa-b52e-edbc43a4bbad)
-
-   Great! You just created a recommended policy. Easy, right? Now go ahead and create policies for all the other workloads in the vote namespace.
+3. Now that you learned how to create policies using Calico Cloud UI, go ahead and create microsegmentation policies for all other workloads in the application.
 
 4. If you create all the policies correctly, at some point, you will start seeing zero traffic being denied by your default-deny staged policy. At that point, you can go ahead and enforce the default-deny policy. Voilà! The vote namespace is now secure.
 
