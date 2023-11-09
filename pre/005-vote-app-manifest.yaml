@@ -201,7 +201,7 @@ kind: Service
 metadata:
   labels:
     app: result
-  name: result-external
+  name: result
   namespace: vote
   annotations:
     projectcalico.org/l7-logging: 'true'
