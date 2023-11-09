@@ -1,6 +1,5 @@
 # Workshop: Amazon EKS Security Bootcamp: </br> Visualize cluster traffic and identify security gaps
 
-
 ## Welcome
 
 In this EKS-focused workshop, you will work with Amazon AWS and Calico Cloud to learn how to employ Calico Cloud in order to visualize cluster traffic and pinpoint security vulnerabilities within your Kubernetes EKS cluster.
